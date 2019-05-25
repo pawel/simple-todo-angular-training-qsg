@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "id": "777e59e2-d2c5-4a38-8298-7ea7656907c5",
+      "title": "deep in Angular",
+      "type": "TODO"
+    },
+    {
+      "id": "244b3779-3234-4ae5-a2b3-3b2a3688e44c",
+      "title": "Angular training",
+      "type": "IN_PROGRESS"
+    },
+    {
+      "id": "8873490e-0f8f-4ef0-9a75-e806773c8ff3",
+      "title": "Wake up early at weekend",
+      "type": "DONE"
+    },
+    {
+      "id": "06e7b358-9404-4877-a190-0ffa8b96cb55",
+      "title": "learn RxJS",
+      "type": "TODO"
+    }
+  ]
+}
