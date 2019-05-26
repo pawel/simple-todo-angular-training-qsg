@@ -12,6 +12,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AddTaskRxComponent} from './components/add-task-rx/add-task-rx.component';
 import {MaterialComponentsModule} from './material-components/material-components.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { DefaultValuePipe } from './default-value.pipe';
 
 @NgModule({
     declarations: [
@@ -21,6 +22,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
         MainTodoComponent,
         AddTaskComponent,
         AddTaskRxComponent,
+        DefaultValuePipe,
     ],
     imports: [
         BrowserModule,
