@@ -7,7 +7,7 @@ export class TasksListModel {
     name: string;
 
     constructor(tasks: TaskModel[], type: TaskType, name: string) {
-        this.tasks = tasks || [];
+        this.tasks = (tasks || []).map((item) => new TaskModel(item));
         this.type = type || TaskType.TODO;
         this.name = name;
     }

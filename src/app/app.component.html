@@ -8,9 +8,20 @@
     <h2>Creating web application with QSG</h2>
 </div>
 
-<div class="container">
+<div class="container mb-3">
+    <ul class="col-12 nav justify-content-center mb-4">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/todo">List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/add-task">Add task</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/add-task-rx">Add task RX</a>
+        </li>
+    </ul>
     <router-outlet></router-outlet>
-    <app-todo
-        [tasksList]="tasksList"
-    ></app-todo>
+    <!--    <app-main-todo-->
+    <!--        [tasksList]="tasksList$ | async"-->
+    <!--    ></app-main-todo>-->
 </div>
