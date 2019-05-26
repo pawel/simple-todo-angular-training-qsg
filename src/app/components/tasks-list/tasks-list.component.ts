@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {TasksListModel} from '../models/tasks-list.model';
-import {TaskType} from '../models/task-type.enum';
+import {TasksListModel} from '../../models/tasks-list.model';
+import {TaskType} from '../../models/task-type.enum';
 
 @Component({
     selector: 'app-tasks-list',

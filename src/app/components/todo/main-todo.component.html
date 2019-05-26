@@ -1,14 +1,8 @@
 <div class="row">
-    <ul class="col-12 nav justify-content-center mb-4">
-        <li class="nav-item">
-            <a class="nav-link" href="#">List</a>
-        </li>
-    </ul>
-
     <div class="col-12">
         <div class="row">
             <div
-                *ngFor="let list of tasksList"
+                *ngFor="let list of tasksList$ | async"
                 class="col-4"
             >
                 <app-tasks-list
