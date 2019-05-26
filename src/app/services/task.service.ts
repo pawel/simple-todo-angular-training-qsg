@@ -1,17 +1,17 @@
-import {Injectable} from '@angular/core';
-import {TasksListModel} from '../models/tasks-list.model';
-import {Observable, of} from 'rxjs';
-import {HttpClient} from '@angular/common/http';
-import {catchError, map, tap} from 'rxjs/operators';
-import {TaskType} from '../models/task-type.enum';
-import {TaskModel} from '../models/task.model';
+import { Injectable } from '@angular/core';
+import { TasksListModel } from '../models/tasks-list.model';
+import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { catchError, map, tap } from 'rxjs/operators';
+import { TaskType } from '../models/task-type.enum';
+import { TaskModel } from '../models/task.model';
 
 @Injectable({
     providedIn: 'root'
 })
 export class TaskService {
 
-    private url = 'http://localhost:3001/tasks';
+    private url = 'http://localhost:3000/tasks';
     private tasksList: TasksListModel[] = [];
 
     constructor(private httpClient: HttpClient) {
@@ -62,7 +62,7 @@ export class TaskService {
     }
 
     public addTask(task: TaskModel, type: TaskType) {
-        return this.httpClient.post(this.url, {...task, type}).pipe(
+        return this.httpClient.post(this.url, { ...task, type }).pipe(
             catchError((err) => {
                 console.error(err);
                 return of(null);
@@ -73,7 +73,7 @@ export class TaskService {
     public editTask(task: TaskModel, type: TaskType) {
         return this.httpClient.put(
             `${this.url}/${task.id}`,
-            {...task, type}
+            { ...task, type }
         )
             .pipe(
                 catchError((err) => {

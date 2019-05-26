@@ -19,6 +19,19 @@
       "id": "06e7b358-9404-4877-a190-0ffa8b96cb55",
       "title": "learn RxJS",
       "type": "TODO"
+    },
+    {
+      "id": "b42d7284-449e-46c4-85d3-543189e63284",
+      "type": "DONE"
+    },
+    {
+      "id": "0ddb1376-f6cf-4840-9f9c-2c42f1970ece",
+      "type": "TODO"
+    },
+    {
+      "id": "6e30ccad-f370-4c1e-b0c0-8be81c0f09b4",
+      "title": "Sprawdzić czy działa tytuł",
+      "type": "IN_PROGRESS"
     }
   ]
 }
