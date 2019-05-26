@@ -5,6 +5,7 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AddTaskRxComponent } from './components/add-task-rx/add-task-rx.component';
 
 const routes: Routes = [
+    { path: 'stats', loadChildren: './stats/stats.module#StatsModule' },
     { path: 'todo', component: MainTodoComponent },
     { path: 'add-task-rx', component: AddTaskRxComponent },
     { path: 'add-task', component: AddTaskComponent },

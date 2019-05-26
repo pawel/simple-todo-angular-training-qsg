@@ -13,7 +13,7 @@ import { AddTaskRxComponent } from './components/add-task-rx/add-task-rx.compone
 import { MaterialComponentsModule } from './material-components/material-components.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultValuePipe } from './default-value.pipe';
-import { StatsModule } from './stats/stats.module';
+//import { StatsModule } from './stats/stats.module';
 
 @NgModule({
     declarations: [
@@ -27,7 +27,7 @@ import { StatsModule } from './stats/stats.module';
     ],
     imports: [
         BrowserModule,
-        StatsModule,
+        /*StatsModule,*/
         HttpClientModule,
         FormsModule,
         ReactiveFormsModule,
